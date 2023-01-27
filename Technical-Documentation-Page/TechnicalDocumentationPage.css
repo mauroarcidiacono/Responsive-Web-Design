@@ -1,0 +1,160 @@
+*:not(code) {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#nav-unorder-list {
+    list-style-type: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 0px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+}
+
+#navbar {
+    border-right: 1px solid #000;
+    width: 290px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.nav-list-element {
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #000;
+}
+
+main {
+    margin-right: 25px;
+    margin-left: 320px;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 1.5em; 
+    font-weight: bolder;
+}
+
+p, li {
+    line-height: 1.5em;
+}
+
+code {
+    width: 97%;
+    display: block;
+    background-color: #E8F4F8;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #000;
+    margin: 0px;
+    padding: 10px;
+    width: 200px;
+}
+
+th {
+    border: 1px solid #000;
+    background-color: #eee;
+}
+
+.flowdiagram {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.flowdiagram-img {
+    display: block;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+#reference {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+    #main-doc {
+        margin-top: 30px;
+    }
+
+    nav {
+        position: static;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 100%;
+        background-color: #FFF;
+    }
+    
+    #nav-unorder-list {
+        list-style-type: none;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 0px;
+    }
+    
+    .nav-link {
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+    }
+
+    #CDocumentation-header {
+        font-size: 16px;
+    }
+    
+    #navbar {
+        border-right: 1px solid #000;
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    .nav-list-element {
+        border-bottom: 1px solid #000;
+        box-sizing: border-box;
+        padding: 0px;
+        color: #000;
+    }
+    
+    main {
+        margin-right: 25px;
+        margin-left: 25px;
+        box-sizing: border-box;
+    }
+    
+}
+

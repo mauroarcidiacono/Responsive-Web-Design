@@ -1,0 +1,355 @@
+* {
+    font-family: 'Zilla Slab', serif;
+}
+
+body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: #34666f;
+}
+
+#nav-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.nav-li {
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+.item-link-nav {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item-link-nav:hover {
+    background-color: #000;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/01/23/51/apple-2568755_960_720.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 100%;
+}
+
+#about, #about-sub {
+    text-align: center;
+    width: 40%;
+    margin-left: 150px;
+}
+
+#about {
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#about-sub {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 180px;
+}
+
+#myPhotoContainer {
+    width: 40%;
+    margin-left: 150px;
+}
+
+#myPhoto {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+#project-section-title {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-top: 70px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#projects {
+    width: 100%;
+    background-color: #F1D6BC;
+    /* background-color: #fef9e7 */
+}
+
+.project-tile {
+    box-sizing: border-box;
+}
+
+#projectsContainer {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 70px;
+    grid-template-rows: 375px;
+}
+
+#tarjeta1, #tarjeta2, #tarjeta3 {
+    /* border: 1px solid #000; */
+    background-color: #BFCFC7;
+    color: #000;
+}
+
+#project1, #project2, #project3 {
+    width: 100%;
+    height: auto;
+}
+
+.project-description {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#tarjeta1 .effect-project-tile, #tarjeta2 .effect-project-tile, #tarjeta3 .effect-project-tile{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#tarjeta1:hover .effect-project-tile, #tarjeta2:hover .effect-project-tile, #tarjeta3:hover .effect-project-tile{
+    opacity: 1;
+}
+
+#showall {
+    text-align: center;
+    margin-top: 130px;
+}
+
+button {
+    font-size: 22px;
+    background-color: #BFCFC7;
+    border: none;
+    padding: 10px;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+button #btn-effect-2 {
+    opacity: 0;
+}
+
+button:hover {
+    background-color: #93BDBF;
+}
+
+button:hover #btn-effect-2 {
+    opacity: 1;
+}
+
+button:hover #btn-effect-1 {
+    opacity: 1;
+}
+
+#contact {
+    background-color: #BFCFC7;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#contact-title {
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#sub-contact {
+    text-align: center;
+    margin-bottom: 90px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#container-contact-li {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact-li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.contact-element {
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#contact-li a:hover {
+    animation-name: contact-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contact-animation{
+    0% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+.contact-link-element {
+    color: black;
+    text-shadow: 1px 1px lightgray;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #34666f;
+    color: #FFF;
+    font-size: 20px;
+    padding: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 450px) {
+    .item-link-nav {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #nav-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    .nav-li {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .contact-element {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:1100px) {
+    #myPhoto {
+        max-width: 150px;
+        height: auto;
+        border-radius: 50%;
+        display: block;
+        margin-top: 100px;
+    }
+
+    #myPhotoContainer {
+        width: 40%;
+        margin-left: 120px;
+    }
+
+    #about, #about-sub {
+        text-align: center;
+        width: 40%;
+        margin-left: 120px;
+    }
+
+    #about {
+        font-size: 35px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    #welcome-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        background-image: url("https://cdn.pixabay.com/photo/2017/08/01/23/51/apple-2568755_960_720.jpg");
+        background-size: cover;
+        
+    }
+
+    #projectsContainer {
+        margin-left: 200px;
+        margin-right: 200px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+
+    #showall {
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    #project1, #project2, #project3 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width:800px) {
+    #projectsContainer {
+        margin-left: 50px;
+        margin-right: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

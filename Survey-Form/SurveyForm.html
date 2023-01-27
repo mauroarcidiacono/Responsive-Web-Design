@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="SurveyForm.css">
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Python Coding Course Survey Form</h1>
+    <p id="description">Thank you for assesing our performance as educators and for helping us improve</p>
+
+    <form id="survey-form" action="">
+        <div id="container1">
+            <div id="container2">
+                <br>
+                <label id="name-label" for="Name">Name:</label>
+                <br>
+                <input id="name" type="text" required placeholder="Please enter your name">
+                <br><br>
+                <label id="email-label" for="E-mail">Email:</label>
+                <br>
+                <input id="email" type="email" required placeholder="Please enter your email">
+                <br><br>
+                <label id="number-label" for="Age">Age <span class="clarification">(Optional)</span>:</label>
+                <br>
+                <input id="number" min="0" max="117" type="number" placeholder="Age">    
+                <br><br>
+            </div>
+            <div id="container3">
+                <label for="educationlevel">Select your highest educational qualification:</label>
+                <br>
+                <select name="educationlevel" id="dropdown">
+                    <option value="" selected="selected" disabled="disabled">Select one</option>
+                    <option value="No formal education">No formal education</option>
+                    <option value="Primary education">Primary education</option>
+                    <option value="Secondary education">Secondary education or high school</option>
+                    <option value="GED">GED</option>
+                    <option value="Vocational qualification">Vocational qualification</option>
+                    <option value="Bachelor's degree">Bachelor's degree</option>
+                    <option value="Master's degree">Master's degree</option>
+                    <option value="Doctorate or higher">Doctorate or higher</option>
+                </select> 
+            </div>  
+            <div id="container4"> 
+                <p>Would you recommend this course to a friend?</p>
+                <input type="radio" name="recommend" id="definitely" value="definitely">
+                <label for="definitely">Definitely</label><br>
+                <input type="radio" name="recommend" id="maybe" value="maybe">
+                <label for="maybe">Maybe</label><br>
+                <input type="radio" name="recommend" id="notsure" value="notsure">
+                <label for="notsure">Not sure</label><br>
+            </div>
+            <div id="container5">
+                <p>What would like to see improved? <span class="clarification">(Check all that apply)</span></p>
+                <input type="checkbox" name="datastructures" id="datastructures" value="datastructures">
+                <label for="datastructures">Data Structures</label><br>
+                <input type="checkbox" name="Loops" id="Loops" value="Loops">
+                <label for="Loops">Loops</label><br>
+                <input type="checkbox" name="ifthenelse" id="ifthenelse" value="ifthenelse">
+                <label for="ifthenelse">If-then-(else) statements</label><br>
+                <input type="checkbox" name="OOP" id="OOP" value="OOP">
+                <label for="OOP">Object Oriented Programming</label><br>
+                <input type="checkbox" name="inheritance" id="inheritance" value="inheritance">
+                <label for="inheritance">Inheritance</label><br>
+                <input type="checkbox" name="polymorphism" id="polymorphism" value="polymorphism">
+                <label for="polymorphism">Polymorphism</label><br><br>
+            </div> 
+            <div id="container6">
+                <label for="review">Any comments or suggestions?</label>
+                <br>
+                <textarea id="review" name="review" rows="5" cols="50" placeholder="Enter your comment here..."></textarea><br><br>
+                <input id="submit" type="submit" value="Submit">
+                <br><br>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

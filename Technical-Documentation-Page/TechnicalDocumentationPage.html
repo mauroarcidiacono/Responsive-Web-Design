@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="TechnicalDocumentationPage.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <div id="documentation-container">
+    <nav id="navbar">
+        <ul id="nav-unorder-list"> 
+            <li class="nav-list-element"><header id="CDocumentation-header">C++ Documentation</header></li>
+            <li class="nav-list-element"><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li class="nav-list-element"><a class="nav-link" href="#Hello_World_using_C++">Hello World using C++</a></li>
+            <li class="nav-list-element"><a class="nav-link" href="#Applications_of_C++_Programming">Applications of C++ Programming</a></li>
+            <li class="nav-list-element"><a class="nav-link" href="#C++_Data_Types">C++ Data Types</a></li>
+            <li class="nav-list-element"><a class="nav-link" href="#C++_Loop_Types">C++ Loop Types</a></li>
+        </ul>
+
+    </nav>
+
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header class="header-section">Introduction</header>
+            <p>C++ is a middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs. 
+               C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. 
+               This C++ tutorial adopts a simple and practical approach to describe the concepts of C++ for beginners to advanced software engineers.</p>
+
+            <p>C++ is a MUST for students and working professionals to become a great Software Engineer. 
+                I will list down some of the key advantages of learning C++:
+                <ul>
+                    <li>C++ is very close to hardware, so you get a chance to work at a low level which gives you lot of control in terms of memory management, 
+                        better performance and finally a robust software development.</li>
+                    <li>C++ programming gives you a clear understanding about Object Oriented Programming. You will understand low level implementation of polymorphism when you will implement virtual tables and virtual table pointers, 
+                        or dynamic type identification.</li>
+                    <li>C++ is one of the every green programming languages and loved by millions of software developers. 
+                        If you are a great C++ programmer then you will never sit without work and more importantly you will get highly paid for your work.</li>
+                    <li>C++ is the most widely used programming languages in application and system programming. 
+                        So you can choose your area of interest of software development.</li>
+                    <li>C++ really teaches you the difference between compiler, linker and loader, different data types, storage classes, 
+                        variable types their scopes etc.</li>
+                </ul>
+            </p>
+            <p>
+                There are 1000s of good reasons to learn C++ Programming. But one thing for sure, to learn any programming language, not only C++, you just need to code, and code and finally code until you become expert.
+            </p>
+        </section>
+        <br><br>
+        <section class="main-section" id="Hello_World_using_C++">
+            <header class="header-section">Hello World using C++</header>
+            <p>
+                Just to give you a little excitement about C++ programming, I'm going to give you a small conventional C++ Hello World program.
+                C++ is a super set of C programming with additional implementation of object-oriented concepts.
+            </p>
+
+            <code>
+                #include &lt;iostream&gt; <br>
+                using namespace std; <br>
+                <br>
+                // main() is where program execution begins. <br>
+                int main() { <br>
+                cout << "Hello World"; // prints Hello World <br>
+                return 0; <br>
+                } <br>
+            </code>
+
+            <p>
+                There are many C++ compilers available which you can use to compile and run above mentioned program:
+                <ul>
+                    <li>Apple C++. Xcode</li>
+                    <li>Bloodshed Dev-C++</li>
+                    <li>Clang C++</li>
+                    <li>Cygwin (GNU C++)</li>
+                    <li>Mentor Graphics</li>
+                    <li>MINGW - "Minimalist GNU for Windows"</li>
+                    <li>GNU CC source</li>
+                    <li>IBM C++</li>
+                    <li>Intel C++</li>
+                    <li>Microsoft Visual C++</li>
+                    <li>Oracle C++</li>
+                    <li>HP C++</li>
+                </ul>
+                It is really impossible to give a complete list of all the available compilers. The C++ world is just too large and too much new is happening.
+            </p>
+        </section>
+        <br><br>
+        <section class="main-section" id="Applications_of_C++_Programming">
+            <header class="header-section">Applications of C++ Programming</header>
+            <p>
+                As mentioned before, C++ is one of the most widely used programming languages. It has it's presence in almost every area of software development. I'm going to list few of them here:
+                <ul>
+                    <li>Application Software Development - C++ programming has been used in developing almost all the major Operating Systems like Windows, Mac OSX and Linux. Apart from the operating systems, the core part of many browsers like Mozilla Firefox and Chrome have been written using C++. C++ also has been used in developing the most popular database system called MySQL.</li>
+                    <li>Programming Languages Development - C++ has been used extensively in developing new programming languages like C#, Java, JavaScript, Perl, UNIX’s C Shell, PHP and Python, and Verilog etc.</li>
+                    <li>Computation Programming - C++ is the best friends of scientists because of fast speed and computational efficiencies.</li>
+                    <li>Games Development - C++ is extremely fast which allows programmers to do procedural programming for CPU intensive functions and provides greater control over hardware, because of which it has been widely used in development of gaming engines.</li>
+                    <li>Embedded System - C++ is being heavily used in developing Medical and Engineering Applications like softwares for MRI machines, high-end CAD/CAM systems etc.</li>
+                </ul>
+                This list goes on, there are various areas where software developers are happily using C++ to provide great softwares. I highly recommend you to learn C++ and contribute great softwares to the community.
+            </p>
+        </section>
+        <br><br>
+        <section class="main-section" id="C++_Data_Types">
+            <header class="header-section">C++ Data Types</header>
+            <p>While writing program in any language, you need to use various variables to store various information. Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory.</p>
+            <p>You may like to store information of various data types like character, wide character, integer, floating point, double floating point, boolean etc. Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory.</p>
+            <h4>Primitive Built-in Types</h4>
+            <p>C++ offers the programmer a rich assortment of built-in as well as user defined data types. Following table lists down seven basic C++ data types.</p>
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Keyword</th>
+                </tr>
+                <tr>
+                    <td>Boolean</td>
+                    <td>bool</td>
+                </tr>
+                <tr>
+                    <td>Character</td>
+                    <td>char</td>
+                </tr>
+                <tr>
+                    <td>Integer</td>
+                    <td>int</td>
+                </tr>
+                <tr>
+                    <td>Floating point</td>
+                    <td>float</td>
+                </tr>
+                <tr>
+                    <td>Double floating point</td>
+                    <td>double</td>
+                </tr>
+                <tr>
+                    <td>Valueless</td>
+                    <td>void</td>
+                </tr>
+                <tr>
+                    <td>Wide character</td>
+                    <td>wchar_t</td>
+                </tr>
+            </table>
+            <p>
+                Following is the example, which will produce correct size of various data types on your computer.
+            </p>
+
+            <code>
+                #include &lt;iostream&gt; <br>
+                using namespace std; <br>
+                <br>
+                int main() { <br>
+                    cout << "Size of char : " << sizeof(char) << endl; <br>
+                    cout << "Size of int : " << sizeof(int) << endl; <br>
+                    cout << "Size of short int : " << sizeof(short int) << endl; <br>
+                    cout << "Size of long int : " << sizeof(long int) << endl; <br>
+                    cout << "Size of float : " << sizeof(float) << endl; <br>
+                    cout << "Size of double : " << sizeof(double) << endl; <br>
+                    cout << "Size of wchar_t : " << sizeof(wchar_t) << endl; <br>
+                <br>
+                    return 0; <br>
+                } <br>
+            </code>
+            
+            <p>
+                This example uses endl, which inserts a new-line character after every line and << operator is being used to pass multiple values out to the screen. We are also using sizeof() operator to get size of various data types.
+                When the above code is compiled and executed, it produces the following result which can vary from machine to machine.
+            </p>
+
+            <code>
+                Size of char : 1 <br>
+                Size of int : 4 <br>
+                Size of short int : 2 <br>
+                Size of long int : 4 <br>
+                Size of float : 4 <br>
+                Size of double : 8 <br>
+                Size of wchar_t : 4 <br>
+            </code>
+
+        </section>
+        <br><br>
+        <section class="main-section" id="C++_Loop_Types">
+            <header class="header-section">C++ Loop Types</header>
+            <p>There may be a situation, when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.
+
+                Programming languages provide various control structures that allow for more complicated execution paths.
+                
+                A loop statement allows us to execute a statement or group of statements multiple times and following is the general from of a loop statement in most of the programming languages
+            </p>
+
+            <h3>While Loop</h3>
+                <p>A while loop statement repeatedly executes a target statement as long as a given condition is true.</p>
+                <code>
+                    while(condition) { <br>
+                        statement(s); <br>
+                     } <br>
+                </code>
+                <p>Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is any non-zero value. The loop iterates while the condition is true.
+
+                    When the condition becomes false, program control passes to the line immediately following the loop.
+                </p>
+                <p class="flowdiagram">Flow Diagram</p>
+                <img class="flowdiagram-img" src="https://www.tutorialspoint.com/cplusplus/images/cpp_while_loop.jpg" alt="While loop flow diagram">
+            
+            <h3>For Loop</h3>
+                <p>A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times.</p>
+                <code>
+                    for ( init; condition; increment ) { <br>
+                        statement(s); <br>
+                    } <br>
+                </code>
+                <p>Here is the flow of control in a for loop:</p>
+                <ul>
+                    <li>The init step is executed first, and only once. This step allows you to declare and initialize any loop control variables. You are not required to put a statement here, as long as a semicolon appears.</li>
+                    <li>Next, the condition is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop does not execute and flow of control jumps to the next statement just after the for loop.</li>
+                    <li>After the body of the for loop executes, the flow of control jumps back up to the increment statement. This statement can be left blank, as long as a semicolon appears after the condition.</li>
+                    <li>The condition is now evaluated again. If it is true, the loop executes and the process repeats itself (body of loop, then increment step, and then again condition). After the condition becomes false, the for loop terminates.</li>
+                </ul>
+                <p class="flowdiagram">Flow Diagram</p>
+                <img class="flowdiagram-img" src="https://www.tutorialspoint.com/cplusplus/images/cpp_for_loop.jpg" alt="For loop flow diagram">
+
+
+            <h3>Do While Loop</h3>
+                <p>Unlike for and while loops, which test the loop condition at the top of the loop, the do...while loop checks its condition at the bottom of the loop.
+
+                    A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.</p>
+
+                <code>
+                    do { <br>
+                        statement(s); <br>
+                     } <br>
+                     while( condition ); <br>
+                </code>
+                
+                <p>
+                    Notice that the conditional expression appears at the end of the loop, so the statement(s) in the loop execute once before the condition is tested.
+
+                    If the condition is true, the flow of control jumps back up to do, and the statement(s) in the loop execute again. This process repeats until the given condition becomes false.
+                </p>
+
+                <p class="flowdiagram">Flow Diagram</p>
+                <img class="flowdiagram-img" src="https://www.tutorialspoint.com/cplusplus/images/cpp_do_while_loop.jpg" alt="Do while loop diagram">
+        </section>
+
+        <section>
+            <header>Reference</header>
+
+            <p id="reference">All the documentation of this page is taken from <a href="https://www.tutorialspoint.com/cplusplus/index.htm" target="_blank">tutorials point</a>.</p>
+        </section>
+
+    </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

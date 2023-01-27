@@ -1,0 +1,73 @@
+body {
+    background-image: url('https://www.solidbackgrounds.com/images/website/950x534/950x534-blue-stained-glass-free-website-background-image.jpg');
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    font-style: italic;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 50%;
+    background-color: rgba(0, 47, 99, 0.6);
+    font-size: 1.1rem;
+    border-radius: 1%;
+}
+
+#name, #email, #number, #dropdown {
+     border-radius: 10px;
+     margin-top: 5px;
+    }
+
+#container2, #container3, #container4, #container5, #container6 {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#container2 input, #container3 select { 
+    font-size: 1.1rem;
+    width: 100%; 
+    box-sizing: border-box;  
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;    
+    margin-top: 5px;    
+}
+
+input {
+    padding-left: 10px;
+}
+
+#submit {
+    width: 100%;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #000;
+    height: 130%;
+    font-size: 105%;
+}
+
+span {
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
